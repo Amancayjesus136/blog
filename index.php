@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
-	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/estilos.css">
 
 
 	
@@ -28,7 +28,7 @@
 		<center><h2 class="nombre">Clinica Veterinaria LGsusVet</h2></center> 
 				</div>
 
-				
+
 				<div class="col-sm-9">
 					<ul class="menu">
 			<li>
@@ -67,6 +67,20 @@
 	<section class="container">
 		
 	
+	<?php $articulos = new WP_Query([
+		    'showposts' => 3
+		]);
+
+	while ($articulos->have_posts()) {
+	$articulos->the_post();
+
+	the_title();
+	echo '<hr>';
+
+	} ?>	
+
+
+
 	<center><img class="foto1" src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/social_share_large/public/2020-12/purina-consulta-veterinaria-para-mascotas-lo-que-debes-saber.jpg?itok=-YoxixyF" width="400px"></center>
 
 	<center><a href="#"><h2 class="opcion1">CENTRO DE ATENCION MEDICA</h2></a></center>
@@ -94,7 +108,7 @@
 		<ul class="redes">
 		
 		<li>
-		<center><h2>Redes sociales</h2></center> <br>
+		<center><h2 class="sociales">Redes sociales</h2></center> <br>
 		</li>
 		<li>
 		<i class="fa fa-facebook-official" aria-hidden="true"></i>	<br>
