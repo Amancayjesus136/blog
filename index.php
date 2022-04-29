@@ -72,32 +72,38 @@
 		]);
 
 	while ($articulos->have_posts()) {
-	$articulos->the_post();
+	$articulos->the_post(); ?>
 
-	the_title();
-	echo '<hr>';
 
-	} ?>	
+
+
+
+	<?php the_post_thumbnail("medium"); ?>
+
+	
+	
+	<?php the_excerpt(); ?>
+	
+
+
+
+
+	<?php } ?>
+
+	
+
+		
 
 
 
 	<center><img class="foto1" src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/social_share_large/public/2020-12/purina-consulta-veterinaria-para-mascotas-lo-que-debes-saber.jpg?itok=-YoxixyF" width="400px"></center>
 
-	<center><a href="#"><h2 class="opcion1">CENTRO DE ATENCION MEDICA</h2></a></center>
+	<h2><?php the_title(); ?></h2>
 	<center><h4 class="texto1">Esterilización de acuerdo a cada realidad social</h4></center>
 
 	<hr>
 
-	<br><center><img class="foto2" src="https://www.promedco.com/images/NOTICIAS_2020/reducir-estres-de-mascotas-1.jpg" width="400px"></center>
-	<center><a href="#"><h2 class="opcion2">¿QUIENES SOMOS?</h2></a></center>
-	<center><h3 class="texto2">Somos una clínica donde te brindamos comodidad desde tu casa, brindamos asesoría medica con el fin de despejar sus dudas y poder ayudarlos a resolver situaciones que presente tu mascota.</h3></center>
-
-	<hr>
-	<br>
-
-	<center><img class="foto3" src="https://images1.content-hci.com/commimg/myhotcourses/blog/post/myhc_65644.jpg" width="400px"></center>
-	<center><h4 class="texto3">Una de muchas metas que queremos lograr seria, poder brindar la mejor calidad de atención a nuestros pacientes, por otro lado a ayudar a los animalitos también orientar a sus dueños ya que tiene como fin despejar cualquier duda y ayudarlos a resolver situaciones que podría presentar su mascota en el día a día.</h4></center>
-
+	
 	<hr>
 	<br>
 
@@ -129,3 +135,4 @@
 
 </body>
 </html>
+
