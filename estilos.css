@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins&display=swap');
 
 .cuerpo {
-	background-color: lightblue;
+	background-color: skyblue;
 }
 
 .imagen {
@@ -47,7 +47,8 @@
 
 
 .foto1 {
-	border-radius: 30px;
+	
+	margin-top: 15px;
 
 }
 .foto2 {
@@ -67,6 +68,12 @@
 	width: 1px;
 	padding-left: 150px;
 
+
+}
+.caja {
+	border: 1px solid black;
+	margin-top: 20px;
+	background-color: ;
 
 }
 
@@ -89,7 +96,9 @@
 	margin-right: 20px;
 	margin-left: 30px;
 }
-.the_title {
-	
-}
 
+.fotoperro {
+	margin-top: 15px;
+	
+
+}
