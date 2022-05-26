@@ -6,52 +6,37 @@
 	<title>detalle</title>
 </head>
 <body>
-	
+
 		
 		<header>
 
-		<center><img class="imagen" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy-r7TUbdPxXZGj-1Kpxu-M4GYnY-_TRwIFQkoft9GClew8f2aBp0NmIH2wjY9-Nkvl1Y&usqp=CAU"></center>
-		<center><h2>Clinica Veterinaria LGsusVet</h2></center> 
+		
+		<center><h2><?php the_title(); ?></h2></center> 
+		
+		
 		<br>
 		<br>
+		<center><h4>Resumen: <?php the_field('resumen') ?></h4></center>
+		<center><?php the_post_thumbnail("large"); ?></center>
+		<?php the_content(); ?>
+
+		<br>
+		<br>
+
+		<h4>Fuente: <?php the_field('fuente') ?></h4>
 		
 
-		<ul>
-			<li>
-				<center><a href="#">Contactanos</a></center>
-			</li> <br>
-			<li>
-				<center><a href="#">Servicios</a></center>
-			</li> <br>
-			<li>
-				<center><a href="#">Trayectoria</a></center>
-			</li> <br>
-			<li>
-				<center><a href="#">Nosotros</a></center>
-			</li> <br>
-			<li>
-				<center><a href="#">Equipo</a></center>
-			</li><br>
-			<hr>
+		
 
-
-		</ul>
-
-	</div>
-
+		
 	</header>
 
 	<section>
 		
 
-		<center><a href="#"><h2>QUIENES SOMOS</h2></a></center>
-		<br><center><img src="https://www.promedco.com/images/NOTICIAS_2020/reducir-estres-de-mascotas-1.jpg" width="400px"></center>
+		
 
-		<center><h1>Nosotros somos un concepto nuevo en atención a veterinaria y servicios especializados en nuestras mascotas, Por otro lado te estamos brindando los mejores doctores especializados en medicina veterinaria para brindarte la mejor calidad y atención que se merecen.
-		Una de muchas metas que queremos lograr seria, poder brindar la mejor calidad de atención a nuestros pacientes, por otro lado a ayudar a los animalitos también orientar a sus dueños ya que tiene como fin despejar cualquier duda y ayudarlos a resolver situaciones que podría presentar su mascota en el día a día.</h1>
-		<br>
-
-		<center><a href="#"><h2>OTRAS OPCIONES</h2></a></center>
+		
 		<ul>
 			<li>
 				 
